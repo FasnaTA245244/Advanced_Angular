@@ -1,0 +1,9 @@
+<!-- <div *ngIf="convertedAmount !== undefined">
+  Converted Amount: {{ convertedAmount }} INR
+</div> -->
+<app-child [USDconvert]="converted" [INDconvert]="convertedAmount" (conversion)="convertToRupees($event)" (Iconversion)="convertToDollar($event)"></app-child>
+    
+   
+    <!-- <div *ngIf="converted !== undefined">
+      Converted Amount: {{ converted }} USD
+    </div> -->

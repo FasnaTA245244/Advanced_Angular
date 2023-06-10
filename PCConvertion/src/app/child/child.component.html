@@ -1,0 +1,16 @@
+<h2>Currency Converter(USD To IND)</h2>
+    <input type="number" [(ngModel)]="dollarAmount" placeholder="Enter amount in USD">
+    <button (click)="convertToRupees()">Convert</button>
+<br>
+
+<div *ngIf="INDconvert !== undefined">
+    Converted Amount: {{ INDconvert }} INR
+  </div>
+<br>
+<h2>Currency Converter(IND To USD)</h2>
+    <input type="number" [(ngModel)]="indianAmount" placeholder="Enter amount in IND">
+    <button (click)="convertToDollar()">Convert</button><br>
+    <div *ngIf="USDconvert !== undefined">
+        Converted Amount: {{ USDconvert }} USD
+      </div>
+    

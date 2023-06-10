@@ -1,0 +1,30 @@
+
+<div>
+  <h1>Angular Parent-Child List App</h1>
+  
+</div>
+<div>
+  <h2>Parent Component</h2>
+  <button (click)="addItem()">Add Item</button>
+  <app-child [items]="itemList"></app-child>
+</div>  
+<!-- <app-child></app-child> -->
+<!-- <div> -->
+  <!-- <h2>Parent Component</h2>
+  <button (click)="addData()">Add Data</button>
+  <app-child [data]="parentData"></app-child>
+</div> -->
+
+
+<!-- <h3>Angular Parent-Child App</h3>
+<div>
+  <h2>Parent Component</h2>
+  <app-child (addItems)="addItems($event)"></app-child>
+  <ul>
+    <li *ngFor="let item of itemList">{{ item }}</li>
+  </ul>
+</div>
+<div>
+ 
+  //<app-parent></app-parent></div>
+ -->
